@@ -1,0 +1,222 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.logo {
+    position: relative;
+    width: 500px;
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: bold;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+
+.logo img {
+    position: absolute;
+    width: 60px;
+    left: 0;
+}
+
+.logo p {
+    position: absolute;
+    right: 55%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.hero {
+    background: url('assets/bannner_10.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background: #0066cc;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background: #004d99;
+}
+
+section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.service {
+    background: #fff;
+    margin: 2rem 0;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.bg1 {
+    background: url('assets/automation.webp') no-repeat center left/contain;
+    color: #000;
+}
+
+.bg2 {
+    background: url('assets/IA.webp') no-repeat center right/contain;
+    color: #000;
+}
+
+.bg3 {
+    background: url('assets/galera.webp') no-repeat center left/contain;
+    color: #000;
+}
+
+#about {
+    overflow: hidden;
+    position: relative;
+    color: #000;
+}
+
+#about img {
+    opacity: 0.2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+}
+
+#contact {
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    color: #000;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+#contact img {
+    position: absolute;
+    left: 0;
+    width: 20%;
+    height: auto;
+}
+
+.contact-info {
+    margin-bottom: 2rem;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+.contact-info i {
+    margin-right: 0.5rem;
+}
+
+#contact form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    align-items: stretch;
+}
+
+#contact label {
+    margin-top: 1rem;
+}
+
+#contact input, #contact textarea, #contact button {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact button {
+    background: #0066cc;
+    color: #fff;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background: #004d99;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer .social-links {
+    margin: 1rem 0;
+}
+
+footer .social-links a {
+    color: #fff;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+footer .social-links a:hover {
+    color: #ccc;
+}
