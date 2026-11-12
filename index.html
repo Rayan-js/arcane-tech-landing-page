@@ -1,94 +1,421 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arcane Tech</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arcane Tech · Integração e automação para operações logísticas</title>
+  <meta name="description" content="Robôs que operam seu ERP, portal do cliente com rastreamento, CT-e/MDF-e e integração TMS ↔ ERP para transportadoras e operadores logísticos. Sem trocar o sistema que você já usa.">
+  <meta name="theme-color" content="#0A1620">
+  <link rel="canonical" href="https://arcanetech.com.br/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:url" content="https://arcanetech.com.br/">
+  <meta property="og:title" content="Arcane Tech · Integração e automação para operações logísticas">
+  <meta property="og:description" content="Seu TMS, seu ERP e a SEFAZ conversando sozinhos. Automação de back-office, portal do cliente e documento fiscal de transporte.">
+  <meta property="og:image" content="https://arcanetech.com.br/assets/logo-no-bg.png">
+
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="alternate icon" href="assets/favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Arcane Tech",
+    "url": "https://arcanetech.com.br/",
+    "logo": "https://arcanetech.com.br/assets/logo-no-bg.png",
+    "description": "Integração e automação para operações logísticas: automação de back-office, portal do cliente e rastreamento, documento fiscal de transporte e integração TMS ↔ ERP.",
+    "email": "rayan@arcanetech.com.br",
+    "telephone": "+55-19-98275-6410",
+    "areaServed": "BR",
+    "address": { "@type": "PostalAddress", "addressLocality": "Paulínia", "addressRegion": "SP", "addressCountry": "BR" },
+    "founder": { "@type": "Person", "name": "Rayan Tilli" },
+    "sameAs": ["https://www.linkedin.com/company/arcane-tech19"]
+  }
+  </script>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                
-                <img src="assets/logo-no-bg.png" alt="logo">
-                <p>  Arcane Tech  </p>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
 
-            </div>
-            <ul class="nav-links">
-                <li><a href="#services">Serviços</a></li>
-                <li><a href="#about">Sobre Nós</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="nav" id="topo">
+    <div class="wrap nav__inner">
+      <a href="#topo" class="brand" aria-label="Arcane Tech, início">
+        <svg class="brand__mark" viewBox="0 0 100 100" aria-hidden="true">
+          <polygon points="4,50 50,4 50,30 30,50" fill="#0B3C5D"/>
+          <polygon points="50,4 96,50 70,50 50,30" fill="#1AA5C8"/>
+          <polygon points="96,50 50,96 50,70 70,50" fill="#F7931E"/>
+          <polygon points="50,96 4,50 30,50 50,70" fill="#2B3A44"/>
+        </svg>
+        <span>Arcane<b>Tech</b></span>
+      </a>
 
+      <button class="nav__toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+        <span></span><span></span>
+      </button>
+
+      <nav id="menu" class="nav__menu" aria-label="Principal">
+        <a href="#solucoes">Soluções</a>
+        <a href="#casos">Casos</a>
+        <a href="#como">Como trabalho</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#faq">Dúvidas</a>
+        <a href="#contato" class="btn btn--sm btn--primary">Agendar diagnóstico</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- HERO -->
     <section class="hero">
-        <h1>Revolucione Seu Negócio com Automação e IA</h1>
-        <p>Maximize a eficiência e aumente os lucros com nossas soluções tecnológicas de ponta.</p>
-        <a href="#contact" class="cta-button">Comece Agora</a>
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="wrap hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow">Integração e automação para operações logísticas</p>
+          <h1>Seu TMS, seu ERP e a SEFAZ <span class="hl">conversando sozinhos.</span></h1>
+          <p class="lead">Robôs que operam o sistema legado, portal que mostra a carga para o seu cliente e a parte fiscal que ninguém quer digitar. Tudo isso sem trocar o sistema que a sua transportadora já usa.</p>
+          <div class="hero__cta">
+            <a href="#contato" class="btn btn--primary">Agendar diagnóstico gratuito</a>
+            <a href="#casos" class="btn btn--ghost">Ver casos reais</a>
+          </div>
+          <ul class="hero__tags" aria-label="Especialidades">
+            <li>CT-e · MDF-e</li><li>TMS ↔ ERP</li><li>Rastreamento</li><li>RPA</li>
+          </ul>
+        </div>
+
+        <figure class="console" aria-label="Simulação da rotina diária de robôs de integração">
+          <div class="console__bar">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="console__title">rotina-diaria · 06:00</span>
+            <span class="console__live">ao vivo</span>
+          </div>
+          <ol class="console__log" id="log">
+            <li><time>06:00:02</time><em class="t-erp">erp</em><span>214 CT-e do dia importados no ERP</span><i class="ok">ok</i></li>
+            <li><time>06:00:41</time><em class="t-fisc">sefaz</em><span>MDF-e de 12 viagens encerrados</span><i class="ok">ok</i></li>
+            <li><time>06:01:15</time><em class="t-bank">banco</em><span>Conciliação · 1.382 lançamentos batidos</span><i class="ok">ok</i></li>
+            <li><time>06:02:03</time><em class="t-port">portal</em><span>38 clientes avisados: carga em rota</span><i class="ok">ok</i></li>
+            <li><time>06:02:20</time><em class="t-mail">e-mail</em><span>Pedido de coleta lido e lançado no TMS</span><i class="ok">ok</i></li>
+            <li><time>06:03:09</time><em class="t-warn">alerta</em><span>Portal da prefeitura fora · nova tentativa 06:15</span><i class="warn">aviso</i></li>
+          </ol>
+          <figcaption>Simulação de uma rotina diária. Os números dos casos estão logo abaixo.</figcaption>
+        </figure>
+      </div>
     </section>
-    
 
-    <section id="services">
-        <h2>Nossos Serviços</h2>
-        <div class="service bg">
-            <h3>Consultoria </h3>
-            <p>Realizamos serviços de consultoria tecnológicas, que gerem valor para seu negócio.</p>
-        </div>
-        <div class="service bg1">
-            <h3>Automação RPA </h3>
-            <p>Agilize tarefas repetitivas e melhore a precisão com nossas soluções avançadas de RPA.</p>
-        </div>
-        <div class="service bg2">
-            <h3>Inteligência Artificial</h3>
-            <p>Aproveite a IA para obter insights, otimizar processos e tomar decisões mais inteligentes.</p>
-        </div>
-        <div class="service bg3">
-            <h3>Desenvolvimento Web e Mobile </h3>
-            <p>Construa aplicações web e móveis escaláveis e seguras para atender às necessidades do seu negócio.</p>
-        </div>
+    <!-- PROVA -->
+    <section class="proof" aria-label="Números em produção">
+      <div class="wrap proof__grid">
+        <div><strong>75+</strong><span>robôs em produção numa transportadora com 140+ filiais</span></div>
+        <div><strong>800+</strong><span>lojas de uma rede nacional com integração fiscal (NFC-e, SAT, SEFAZ)</span></div>
+        <div><strong>8.200+</strong><span>solicitações de transporte processadas por um único portal</span></div>
+        <div><strong>99,8%</strong><span>das integrações entregues sem erro ao sistema do cliente</span></div>
+      </div>
     </section>
 
-    <section id="about">
-        <img src="assets/galera.webp" alt="contato" srcset="">
-
-        <h2 class="resto">Sobre Arcane Tech</h2>
-        <p class="resto">Na Arcane Tech, estamos comprometidos em oferecer soluções tecnológicas inovadoras que impulsionam o sucesso. Com foco em RPA, IA e desenvolvimento de aplicações, ajudamos empresas a se transformarem e prosperarem na era digital.</p>
+    <!-- DOR -->
+    <section class="section section--light" id="dor">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="eyebrow eyebrow--dark">O problema</p>
+          <h2>Onde a sua operação perde horas todo dia</h2>
+          <p>Muita transportadora tem sistema bom. O trabalho escapa no espaço entre um sistema e outro, e é aí que alguém da equipe fica copiando e colando.</p>
+        </header>
+        <div class="pains">
+          <article class="pain">
+            <span class="pain__n">01</span>
+            <h3>Redigitação entre sistemas</h3>
+            <p>O pedido chega por e-mail, alguém digita no TMS, depois de novo no ERP, depois numa planilha.</p>
+          </article>
+          <article class="pain">
+            <span class="pain__n">02</span>
+            <h3>Cliente ligando pra saber da carga</h3>
+            <p>O rastreamento existe, mas o cliente não vê. Quem atende passa o dia respondendo "onde está?".</p>
+          </article>
+          <article class="pain">
+            <span class="pain__n">03</span>
+            <h3>Fiscal e financeiro na mão</h3>
+            <p>CT-e, MDF-e, conciliação bancária, relatórios e portais do governo, sempre com risco de multa por atraso.</p>
+          </article>
+          <article class="pain">
+            <span class="pain__n">04</span>
+            <h3>ERP legado sem API</h3>
+            <p>"O sistema não integra." Na maioria das vezes integra, só não pelo caminho óbvio.</p>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <section id="contact">
-        <img src="assets/contato.webp" alt="contato">
-        <h2 class="resto">Contato</h2>
-        <div class="contact-info resto">
-            <p><i class="fas fa-phone"></i> +55 19 98275-6410 (WhatsApp)</p>
-            <p><i class="fas fa-envelope"></i> contact@arcanetech.com</p>
-            <p><i class="fas fa-map-marker-alt"></i> Rua Jaraguá, 53, Sumaré, SP, Brasil</p>
-            <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/company/arcane-tech19" target="_blank">LinkedIn</a></p>
+    <!-- SOLUÇÕES -->
+    <section class="section section--light section--tint" id="solucoes">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="eyebrow eyebrow--dark">Soluções</p>
+          <h2>Quatro coisas, bem feitas, para quem move carga</h2>
+        </header>
+        <div class="cards">
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 7h10M4 12h16M4 17h7"/><circle cx="18" cy="7" r="2"/><circle cx="15" cy="17" r="2"/></svg>
+            </div>
+            <h3>Automação de back-office</h3>
+            <p>Robôs que operam seu ERP e os portais como um funcionário faria, só que às 6h da manhã, sem erro de digitação e com registro de tudo.</p>
+            <ul>
+              <li>Faturamento, conciliação e remessas bancárias</li>
+              <li>Relatórios fiscais e contábeis recorrentes</li>
+              <li>Multas, ocorrências e baixas em portais</li>
+            </ul>
+          </article>
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 1 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            </div>
+            <h3>Portal do cliente e rastreamento</h3>
+            <p>Seu cliente abre a solicitação, acompanha a carga e recebe aviso sozinho. Sua equipe para de responder "onde está?".</p>
+            <ul>
+              <li>Solicitações e chamados com histórico</li>
+              <li>Eventos de rastreamento com regras anti-ruído</li>
+              <li>Notificações automáticas por e-mail</li>
+            </ul>
+          </article>
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 12h5M10 16h5"/></svg>
+            </div>
+            <h3>Documento fiscal de transporte</h3>
+            <p>CT-e, MDF-e, NF-e e os portais da SEFAZ e das prefeituras tratados por quem já lidou com certificado A1, XML mal documentado e rejeição da Receita.</p>
+            <ul>
+              <li>Importação e conferência de XML</li>
+              <li>Encerramentos e consultas de status</li>
+              <li>Obrigações acessórias recorrentes</li>
+            </ul>
+          </article>
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="7" height="7" rx="1"/><rect x="14" y="13" width="7" height="7" rx="1"/><path d="M10 7.5h4a3 3 0 0 1 3 3V13M14 16.5h-4a3 3 0 0 1-3-3V11"/></svg>
+            </div>
+            <h3>Integração TMS ↔ ERP</h3>
+            <p>Seus sistemas trocam dados entre si, com ou sem API. Tem fila, retentativa e alerta quando algo do outro lado cai.</p>
+            <ul>
+              <li>APIs, webhooks, e-mail e arquivos</li>
+              <li>Leitura automática de pedidos de embarcadores</li>
+              <li>Monitoramento com print do erro e log</li>
+            </ul>
+          </article>
         </div>
-        <form class="resto" action="https://formspree.io/f/xnnavjjl" method="POST">
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Menssagem:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Enviar</button>
+      </div>
+    </section>
+
+    <!-- CASOS -->
+    <section class="section section--dark" id="casos">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="eyebrow">Casos</p>
+          <h2>Em produção, não em apresentação</h2>
+          <p>Os nomes dos clientes ficam de fora por confidencialidade. Os números são do sistema rodando.</p>
+        </header>
+
+        <div class="cases">
+          <article class="case">
+            <p class="case__tag">Transportadora rodoviária · 140+ filiais</p>
+            <h3>Back-office financeiro, contábil e fiscal rodando sozinho</h3>
+            <p>Plataforma com mais de 75 robôs em Python operando o ERP de transporte, o banco e os portais do governo todos os dias, com monitoramento centralizado e alerta por e-mail.</p>
+            <dl class="case__stats">
+              <div><dt>75+</dt><dd>robôs diários</dd></div>
+              <div><dt>2,5 anos</dt><dd>em operação</dd></div>
+            </dl>
+            <p class="case__stack">ERP Rodopar · Bradesco · CT-e / NF-e · Arquivei · Office 365</p>
+          </article>
+
+          <article class="case case--featured">
+            <p class="case__tag">Transportadora de cargas farmacêuticas</p>
+            <h3>Portal do cliente integrado ao TMS e ao rastreamento</h3>
+            <p>Os pedidos dos embarcadores chegam por e-mail, são lidos e viram solicitações. O portal acompanha a carga e avisa o cliente final sem ninguém da operação tocar no teclado.</p>
+            <dl class="case__stats">
+              <div><dt>8.246</dt><dd>solicitações</dd></div>
+              <div><dt>25.683</dt><dd>notificações enviadas</dd></div>
+              <div><dt>19.694</dt><dd>eventos de rastreamento</dd></div>
+              <div><dt>99,8%</dt><dd>entregues sem erro</dd></div>
+            </dl>
+            <p class="case__stack">Next.js · PostgreSQL · integração com TMS e rastreamento · 58 testes automatizados</p>
+          </article>
+
+          <article class="case">
+            <p class="case__tag">Rede nacional de fast food · PDV</p>
+            <h3>Integração fiscal e de pagamento em 800+ lojas</h3>
+            <p>Camada fiscal de um PDV de alta disponibilidade (NFC-e, SAT, SEFAZ e TEF) rodando ao mesmo tempo em todo o país. É a mesma disciplina que o CT-e exige.</p>
+            <dl class="case__stats">
+              <div><dt>800+</dt><dd>lojas simultâneas</dd></div>
+              <div><dt>24/7</dt><dd>alta disponibilidade</dd></div>
+            </dl>
+            <p class="case__stack">NFC-e · SAT · SEFAZ · TEF · arquitetura orientada a eventos</p>
+          </article>
+        </div>
+
+        <div class="systems">
+          <p>Sistemas e serviços com que já integrei</p>
+          <ul>
+            <li>Rodopar</li><li>SEFAZ</li><li>SAT-SP</li><li>Arquivei</li><li>Bradesco</li><li>Office 365</li>
+            <li>Pactum</li><li>Mosaic</li><li>Asfrete</li><li>Pagar.me</li><li>Mercado Pago</li><li>Stripe</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMO -->
+    <section class="section section--light" id="como">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="eyebrow eyebrow--dark">Como trabalho</p>
+          <h2>Do diagnóstico ao robô monitorado</h2>
+        </header>
+        <ol class="steps">
+          <li>
+            <span class="steps__n">1</span>
+            <h3>Diagnóstico gratuito</h3>
+            <p>Uma conversa de 45 minutos para mapear onde a operação perde tempo e o que dá retorno mais rápido.</p>
+          </li>
+          <li>
+            <span class="steps__n">2</span>
+            <h3>Proposta fechada</h3>
+            <p>Escopo, prazo e preço definidos por escrito. Você sabe o que vai receber antes de começar.</p>
+          </li>
+          <li>
+            <span class="steps__n">3</span>
+            <h3>Entrega em produção</h3>
+            <p>Homologado com a sua equipe, com testes automatizados e documentação de entrega.</p>
+          </li>
+          <li>
+            <span class="steps__n">4</span>
+            <h3>Sustentação mensal</h3>
+            <p>Monitoramento, correção quando o sistema do outro lado muda e relatório mensal do que rodou.</p>
+          </li>
+        </ol>
+
+        <div class="principles">
+          <div><h3>Não troca o seu sistema</h3><p>Integra ao que já funciona. Sem migração, sem treinar a equipe num software novo.</p></div>
+          <div><h3>Robô que avisa quando falha</h3><p>Print da tela no erro, log com data e alerta para a pessoa certa. Nada para em silêncio.</p></div>
+          <div><h3>Documentado e seu</h3><p>Cada entrega vem com documentação para que o processo não dependa de memória de ninguém.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section section--light section--tint" id="sobre">
+      <div class="wrap about">
+        <div class="about__badge" aria-hidden="true">
+          <svg viewBox="0 0 100 100">
+            <polygon points="4,50 50,4 50,30 30,50" fill="#0B3C5D"/>
+            <polygon points="50,4 96,50 70,50 50,30" fill="#1AA5C8"/>
+            <polygon points="96,50 50,96 50,70 70,50" fill="#F7931E"/>
+            <polygon points="50,96 4,50 30,50 50,70" fill="#2B3A44"/>
+          </svg>
+        </div>
+        <div class="about__copy">
+          <p class="eyebrow eyebrow--dark">Sobre</p>
+          <h2>Rayan Tilli, engenheiro de integração para operações logísticas</h2>
+          <p>Há 5 anos eu integro sistemas de operação logística: os robôs que rodam o back-office de uma transportadora com 140+ filiais, o portal de uma transportadora de cargas farmacêuticas e, antes disso, a camada fiscal do PDV de uma rede de fast food com 800+ lojas.</p>
+          <p>Fundei a Arcane Tech para fazer esse trabalho direto com transportadoras e operadores logísticos. Você fala com quem constrói, sem intermediário e sem time de vendas.</p>
+          <p class="about__where">Paulínia · Região de Campinas, SP. Atendimento presencial na RMC e remoto em todo o Brasil.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--light" id="faq">
+      <div class="wrap wrap--narrow">
+        <header class="section__head">
+          <p class="eyebrow eyebrow--dark">Dúvidas</p>
+          <h2>Perguntas frequentes</h2>
+        </header>
+        <div class="faq">
+          <details>
+            <summary>Preciso trocar meu TMS ou meu ERP?</summary>
+            <p>Não. O trabalho é justamente fazer os sistemas que você já tem conversarem entre si.</p>
+          </details>
+          <details>
+            <summary>Meu sistema não tem API. Dá para integrar?</summary>
+            <p>Na maioria dos casos, sim. Quando não há API, o robô opera a tela do sistema como uma pessoa faria, com reconhecimento de imagem, conferência e log. Foi assim com o ERP de transporte da transportadora de 140+ filiais.</p>
+          </details>
+          <details>
+            <summary>E se o robô parar?</summary>
+            <p>Ele avisa. Cada execução gera log, cada erro gera print da tela e alerta por e-mail. No plano de sustentação, a correção é comigo.</p>
+          </details>
+          <details>
+            <summary>Quanto custa?</summary>
+            <p>Depende do processo. Projetos são orçados com escopo e preço fechados depois do diagnóstico, que é gratuito. A sustentação é um valor mensal fixo.</p>
+          </details>
+          <details>
+            <summary>Você atende só transportadoras?</summary>
+            <p>O foco é transporte e logística: transportadoras, operadores logísticos e embarcadores. Também atendo departamentos fiscais e contábeis com processos parecidos.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section section--dark contact" id="contato">
+      <div class="wrap contact__inner">
+        <div class="contact__copy">
+          <p class="eyebrow">Contato</p>
+          <h2>Me conte qual processo mais toma tempo da sua equipe</h2>
+          <p>Respondo em até 1 dia útil. Se fizer sentido, marcamos o diagnóstico gratuito.</p>
+          <ul class="contact__list">
+            <li><a href="https://wa.me/5519982756410?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Arcane%20Tech." target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 0 1-11.6 7.1L4 20l1-4.2A8 8 0 1 1 20 12z"/></svg>
+              WhatsApp (19) 98275-6410</a></li>
+            <li><a href="mailto:rayan@arcanetech.com.br">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              rayan@arcanetech.com.br</a></li>
+            <li><a href="https://www.linkedin.com/company/arcane-tech19" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg>
+              LinkedIn</a></li>
+          </ul>
+        </div>
+
+        <form class="form" id="form" action="https://formspree.io/f/xnnavjjl" method="POST">
+          <div class="form__row">
+            <label>Nome<input type="text" name="nome" autocomplete="name" required></label>
+            <label>Empresa<input type="text" name="empresa" autocomplete="organization"></label>
+          </div>
+          <div class="form__row">
+            <label>E-mail<input type="email" name="email" autocomplete="email" required></label>
+            <label>WhatsApp<input type="tel" name="whatsapp" autocomplete="tel" placeholder="(19) 9 ...."></label>
+          </div>
+          <label>O que mais toma tempo da sua equipe hoje?<textarea name="mensagem" rows="4" required placeholder="Ex.: lançamos os pedidos dos clientes à mão no TMS e depois no ERP."></textarea></label>
+          <input type="hidden" name="_subject" value="Novo contato pelo site · Arcane Tech">
+          <button type="submit" class="btn btn--primary btn--block">Enviar</button>
+          <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
         </form>
+      </div>
     </section>
+  </main>
 
-    <footer>
-        <p>&copy; 2024 Arcane Tech. Todos os direitos reservados.</p>
-        <div class="social-links">
-            <a href="https://#" target="_blank" class="fab fa-facebook"></a>
-            <a href="https://#" target="_blank" class="fab fa-twitter"></a>
-            <a href="https://#" target="_blank" class="fab fa-instagram"></a>
-            <a href="https://www.linkedin.com/company/arcane-tech19" target="_blank" class="fab fa-linkedin"></a>
-        </div>
-    </footer>
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div class="brand brand--footer">
+        <svg class="brand__mark" viewBox="0 0 100 100" aria-hidden="true">
+          <polygon points="4,50 50,4 50,30 30,50" fill="#0B3C5D"/>
+          <polygon points="50,4 96,50 70,50 50,30" fill="#1AA5C8"/>
+          <polygon points="96,50 50,96 50,70 70,50" fill="#F7931E"/>
+          <polygon points="50,96 4,50 30,50 50,70" fill="#2B3A44"/>
+        </svg>
+        <span>Arcane<b>Tech</b></span>
+      </div>
+      <p>Integração e automação para operações logísticas.</p>
+      <p class="footer__legal">© <span id="ano">2026</span> Arcane Tech · CNPJ 41.621.903/0001-77 · Paulínia, SP</p>
+    </div>
+  </footer>
 
-    <script src="script.js"></script>
+  <a class="wa-float" href="https://wa.me/5519982756410?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Arcane%20Tech." target="_blank" rel="noopener" aria-label="Conversar no WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 0 1-11.6 7.1L4 20l1-4.2A8 8 0 1 1 20 12z"/><path d="M9 9.5c.3 1.8 1.8 3.8 4.5 5"/></svg>
+  </a>
+
+  <script src="script.js"></script>
 </body>
 </html>
